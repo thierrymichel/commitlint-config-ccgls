@@ -39,14 +39,25 @@
     "import-from": "^2.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
     "commitizen": "^2.10.1",
     "cz-ccgls": "^0.2.0",
+    "husky": "^1.2.0",
+    "inquirer": "^5.2.0",
     "lerna": "^3.3.0",
     "standard-version": "^4.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-ccgls"
+    },
+    "cz-ccgls": {
+      "useScopes": false
     }
   }
 }
