@@ -22,6 +22,7 @@ async function getScopes(context) {
 }
 
 module.exports = {
+  extends: ['@commitlint/config-conventional'],
   utils: { getScopes },
   rules: {
     'type-enum': [2, 'always', types.concat(['imp'])],
