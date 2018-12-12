@@ -1,0 +1,52 @@
+{
+  "name": "commitlint-config-ccgls",
+  "version": "1.0.0",
+  "description": "Commitlint companion for cz-ccgls.",
+  "keywords": [
+    "commitlint",
+    "commit",
+    "linter",
+    "commitizen",
+    "conventional",
+    "changelog",
+    "gitmoji",
+    "lerna",
+    "scope"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "commit": "npx git-cz || exit 0",
+    "publish": "git push --follow-tags && npm publish",
+    "release": "standard-version",
+    "test": "echo 'Tests need to be setup!'"
+  },
+  "homepage": "https://github.com/thierrymichel/commitlint-config-ccgls#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thierrymichel/commitlint-config-ccgls.git"
+  },
+  "author": {
+    "name": "Thierry Michel",
+    "email": "thierry@epic.net",
+    "url": "http://epic.net"
+  },
+  "bugs": {
+    "url": "https://github.com/thierrymichel/commitlint-config-ccgls/issues"
+  },
+  "license": "SEE LICENSE IN UNLICENSE",
+  "dependencies": {
+    "@commitlint/config-conventional": "7.1.2",
+    "import-from": "^2.1.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-ccgls": "^0.2.0",
+    "lerna": "^3.3.0",
+    "standard-version": "^4.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-ccgls"
+    }
+  }
+}
