@@ -15,7 +15,7 @@ npm install --save-dev @commitlint/cli
 # Install ccgls
 npm install --save-dev commitlint-config-ccgls
 # Configure commitlint to use ccgls
-echo "module.exports = {extends: ['commitlint-config-ccgls']}" > commitlint.config.js
+echo "module.exports = {extends: ['ccgls']}" > commitlint.config.js
 ```
 
 > More informations about [Commitlint](https://github.com/marionebl/commitlint)…
