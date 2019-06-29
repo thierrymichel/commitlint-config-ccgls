@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.1.1...v1.1.2) (2019-06-29)
+
+
+### Bug Fixes
+
+* :wrench: move depDev to dev ([ad931b6](https://github.com/thierrymichel/commitlint-config-ccgls/commit/ad931b6))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.1.0...v1.1.1) (2019-06-29)
 
