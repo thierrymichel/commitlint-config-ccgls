@@ -1,6 +1,13 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.1.3](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.1.2...v1.1.3) (2019-12-08)
+
+
+### Bug Fixes
+
+* **root:** :arrow_up: upgrade deps and audit fix ([83b2065](https://github.com/thierrymichel/commitlint-config-ccgls/commit/83b20656e8d1507288e950b545a62f72cb91d0b3))
 
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.1.1...v1.1.2) (2019-06-29)
