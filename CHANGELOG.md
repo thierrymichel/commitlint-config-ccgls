@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.1.3...v1.2.0) (2020-04-16)
+
+
+### Features
+
+* **root:** :sparkles: support cz-ccgls additional scopes ([5874ecd](https://github.com/thierrymichel/commitlint-config-ccgls/commit/5874ecd06995e8687d3ec102a2d0d6d372d46696))
+
 ### [1.1.3](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.1.2...v1.1.3) (2019-12-08)
 
 
