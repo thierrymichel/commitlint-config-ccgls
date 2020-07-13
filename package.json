@@ -45,7 +45,7 @@
     "cz-ccgls": "^0.2.3",
     "husky": "^3.1.0",
     "lerna": "^3.19.0",
-    "standard-version": "^7.0.1"
+    "standard-version": "^8.0.1"
   },
   "husky": {
     "hooks": {
