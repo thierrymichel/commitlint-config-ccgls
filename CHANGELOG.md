@@ -1,3 +1,17 @@
+# CHANGELOG
+
+# [1.3.0](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.2.0...v1.3.0) (2021-11-05)
+
+
+### Bug Fixes
+
+* :green_heart: comment coveralls step ([c6c8426](https://github.com/thierrymichel/commitlint-config-ccgls/commit/c6c842657ef0b24ba2a26b703c109071a674ac84))
+
+
+### Features
+
+* :sparkles: add 'header-max-length-emoji-excluded' rule ([933e78e](https://github.com/thierrymichel/commitlint-config-ccgls/commit/933e78e6546dc5004aa891feb0f6eabd054e9080))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
