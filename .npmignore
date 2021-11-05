@@ -1,2 +1,19 @@
-__tests__
-.eslintrc.js
+### Custom ###
+
+# Folders
+/__tests__
+/.github
+/.husky
+/.vscode
+/.yarn
+
+# Files
+/.editorconfig
+/.eslintrc.js
+/.lintstagedrc
+/.markdownlint.json
+/.nvmrc
+/.yarnrc.yml
+/commitlint.config.js
+/prettier.config.js
+/release.config.js

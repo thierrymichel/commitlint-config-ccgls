@@ -14,10 +14,15 @@
     "scope"
   ],
   "main": "index.js",
+  "files": [
+    "index.js",
+    "parser-preset.js"
+  ],
   "scripts": {
     "commit": "npx git-cz || exit 0",
-    "publish": "git push --follow-tags && npm publish",
-    "release": "standard-version",
+    "commit-retry": "npx git-cz --retry || exit 0",
+    "lint": "eslint *.js",
+    "semantic-release": "semantic-release",
     "test": "echo 'Tests need to be setup!'"
   },
   "homepage": "https://github.com/thierrymichel/commitlint-config-ccgls#readme",
@@ -35,22 +40,24 @@
   },
   "license": "SEE LICENSE IN UNLICENSE",
   "dependencies": {
-    "@commitlint/config-conventional": "^8.2.0",
-    "@lerna/project": "^3.18.0",
-    "import-from": "^3.0.0"
+    "@commitlint/config-conventional": "^14.1.0",
+    "@lerna/project": "^4.0.0",
+    "import-from": "^4.0.0",
+    "read-pkg-up": "^7.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "commitizen": "^4.0.3",
-    "cz-ccgls": "^0.2.3",
-    "husky": "^3.1.0",
-    "lerna": "^3.19.0",
-    "standard-version": "^7.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "@commitlint/cli": "^14.1.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.2.4",
+    "cz-ccgls": "^0.3.4",
+    "eslint": "^8.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0"
   },
   "config": {
     "commitizen": {
@@ -59,5 +66,6 @@
     "cz-ccgls": {
       "useScopes": false
     }
-  }
+  },
+  "packageManager": "yarn@3.1.0"
 }
