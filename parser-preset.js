@@ -4,7 +4,7 @@
  */
 module.exports = {
   parserOpts: {
-    headerPattern: /^(\w*)(?:\(([\w$.\-*/ ]*)\))?: (:.*:)?( .*)?$/,
+    headerPattern: /^(\w*)(?:\(([\w$.\-*/ ]*)\))?: (.*)?( -- .*)?$/,
     headerCorrespondence: ['type', 'scope', 'emoji', 'subject'],
   },
 }
