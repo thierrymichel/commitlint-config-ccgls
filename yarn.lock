@@ -1772,7 +1772,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-styles@npm:^6.0.0, ansi-styles@npm:^6.1.0":
+"ansi-styles@npm:^6.1.0":
   version: 6.1.0
   resolution: "ansi-styles@npm:6.1.0"
   checksum: 7a7f8528c07a9d20c3a92bccd2b6bc3bb4d26e5cb775c02826921477377bd495d615d61f710d56216344b6238d1d11ef2b0348e146c5b128715578bfb3217229
@@ -2324,16 +2324,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "cli-truncate@npm:3.1.0"
-  dependencies:
-    slice-ansi: ^5.0.0
-    string-width: ^5.0.0
-  checksum: c3243e41974445691c63f8b405df1d5a24049dc33d324fe448dc572e561a7b772ae982692900b1a5960901cc4fc7def25a629b9c69a4208ee89d12ab3332617a
-  languageName: node
-  linkType: hard
-
 "cli-width@npm:^2.0.0":
   version: 2.2.1
   resolution: "cli-width@npm:2.2.1"
@@ -2524,7 +2514,7 @@ __metadata:
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/git": ^10.0.1
     commitizen: ^4.2.4
-    cz-ccgls: ^0.3.4
+    cz-ccgls: 0.5.0
     eslint: ^8.1.0
     eslint-plugin-prettier: ^4.0.0
     husky: ^7.0.4
@@ -2769,11 +2759,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-ccgls@npm:^0.3.4":
-  version: 0.3.4
-  resolution: "cz-ccgls@npm:0.3.4"
+"cz-ccgls@npm:0.5.0":
+  version: 0.5.0
+  resolution: "cz-ccgls@npm:0.5.0"
   dependencies:
-    cli-truncate: ^3.1.0
     conventional-commit-types: ^3.0.0
     find-cache-dir: ^3.3.2
     fuzzy: ^0.1.3
@@ -2784,11 +2773,12 @@ __metadata:
     longest: ^2.0.1
     node-fetch: ^3.0.0
     ora: ^6.0.1
-    path-exists: ^5.0.0
     read-pkg-up: ^9.0.0
     right-pad: ^1.0.1
     wrap-ansi: ^8.0.1
-  checksum: 1f85a8b9cd5afad270778aa78082bf4682316321f0b88d0ae853662a94f567394fa994820c5a2274c5abc90ce76b8e5b54fbc2b854e9b1f3ddad54f8d2e43e91
+  bin:
+    cz-ccgls: lib/index.cjs.js
+  checksum: 947aa19243d0a8d5857293487d85ad2497fa37b7d0612d06ea8c8589940d663129bc4086a9764670d27b17ff9bbb2d21d793430a975527b1763b2248a51e1667
   languageName: node
   linkType: hard
 
@@ -7754,16 +7744,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slice-ansi@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "slice-ansi@npm:5.0.0"
-  dependencies:
-    ansi-styles: ^6.0.0
-    is-fullwidth-code-point: ^4.0.0
-  checksum: 7e600a2a55e333a21ef5214b987c8358fe28bfb03c2867ff2cbf919d62143d1812ac27b4297a077fdaf27a03da3678e49551c93e35f9498a3d90221908a1180e
-  languageName: node
-  linkType: hard
-
 "slide@npm:^1.1.6":
   version: 1.1.6
   resolution: "slide@npm:1.1.6"
@@ -8013,7 +7993,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^5.0.0, string-width@npm:^5.0.1":
+"string-width@npm:^5.0.1":
   version: 5.0.1
   resolution: "string-width@npm:5.0.1"
   dependencies:
