@@ -2515,6 +2515,7 @@ __metadata:
     "@semantic-release/git": ^10.0.1
     commitizen: ^4.2.4
     cz-ccgls: 0.5.0
+    emoji-regex: ^10.2.1
     eslint: ^8.1.0
     eslint-plugin-prettier: ^4.0.0
     husky: ^7.0.4
@@ -3067,6 +3068,13 @@ __metadata:
     jsbn: ~0.1.0
     safer-buffer: ^2.1.0
   checksum: 22fef4b6203e5f31d425f5b711eb389e4c6c2723402e389af394f8411b76a488fa414d309d866e2b577ce3e8462d344205545c88a8143cc21752a5172818888a
+  languageName: node
+  linkType: hard
+
+"emoji-regex@npm:^10.2.1":
+  version: 10.2.1
+  resolution: "emoji-regex@npm:10.2.1"
+  checksum: 1aa2d16881c56531fdfc03d0b36f5c2b6221cc4097499a5665b88b711dc3fb4d5b8804f0ca6f00c56e5dcf89bac75f0487eee85da1da77df3a33accc6ecbe426
   languageName: node
   linkType: hard
 

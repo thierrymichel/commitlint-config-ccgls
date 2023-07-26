@@ -1,6 +1,9 @@
+const fs = require('fs')
 const importFrom = require('import-from')
-const config = require('@commitlint/config-conventional')
+const path = require('path')
 const readPkg = require('read-pkg-up')
+
+const config = require('@commitlint/config-conventional')
 const [, , types] = config.rules['type-enum']
 
 /**
@@ -9,12 +12,7 @@ const [, , types] = config.rules['type-enum']
  * @param {*} context for the current working directory
  * @returns {array} project scopes + 'root'
  */
-const getConfig = obj =>
-  obj &&
-  obj.config &&
-  obj.config['cz-ccgls'] &&
-  obj.config['cz-ccgls'].useScopes !== false &&
-  obj.config['cz-ccgls'].additionalScopes
+const getConfig = obj => obj && obj.config && obj.config['cz-ccgls']
 
 /**
  * Get lerna scopes
@@ -37,9 +35,36 @@ async function getScopes(context) {
 
   // "Main" package with config
   const { packageJson: mainPkg } = await readPkg()
-  const configScopes = getConfig(mainPkg) || []
+  const config = getConfig(mainPkg)
 
-  return [...new Set(scopes.concat(lernaScopes).concat(configScopes))]
+  let folderScopes = []
+  let additionalScopes = []
+
+  if (config) {
+    if (config.useFolderScopes !== false) {
+      const ignores = ['.git', 'node_modules'].concat(config.folderIgnore)
+      const root = path.resolve(cwd, config.folderRoot || '.')
+
+      folderScopes = fs
+        .readdirSync(root, { withFileTypes: true })
+        .filter(
+          file =>
+            file.isDirectory() &&
+            !file.name.startsWith('.') &&
+            !ignores.includes(file.name)
+        )
+        .map(file => file.name)
+    }
+    if (config.useScopes !== false) {
+      additionalScopes = config.additionalScopes || []
+    }
+  }
+
+  return [
+    ...new Set(
+      scopes.concat(lernaScopes).concat(folderScopes).concat(additionalScopes)
+    ),
+  ]
 }
 
 module.exports = {
