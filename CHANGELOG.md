@@ -1,5 +1,12 @@
 # CHANGELOG
 
+# [1.4.0](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.3.1...v1.4.0) (2023-07-26)
+
+
+### Features
+
+* ✨ manage new scopes + emojis ([1c0c3d8](https://github.com/thierrymichel/commitlint-config-ccgls/commit/1c0c3d83cf706db96332d4de1d4fc824a0e88b9b))
+
 ## [1.3.1](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.3.0...v1.3.1) (2023-07-18)
 
 
