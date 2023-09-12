@@ -6,13 +6,14 @@ const emojiRegex = require('emoji-regex')
 
 const rType = /^(\w*)/
 const rScope = /(?:\(([\w$.\-*/ ]*)\))?: /
-const rEmoji = new RegExp(`(${emojiRegex()}{1})`)
+const rEmoji = `(${emojiRegex().source})`
 const rSubject = / (.*)$/
 
 module.exports = {
+  emojiRegex,
   parserOpts: {
     headerPattern: new RegExp(
-      rType.source + rScope.source + rEmoji.source + rSubject.source
+      rType.source + rScope.source + rEmoji + rSubject.source
     ),
     headerCorrespondence: ['type', 'scope', 'emoji', 'subject'],
   },
