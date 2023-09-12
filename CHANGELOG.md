@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.1](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.0...v1.4.1) (2023-09-12)
+
+
+### Bug Fixes
+
+* 🐛 fix regex parsing ([8505df2](https://github.com/thierrymichel/commitlint-config-ccgls/commit/8505df28b9b3825d07b102021c2579707a70fbf2))
+
 # [1.4.0](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.3.1...v1.4.0) (2023-07-26)
 
 
