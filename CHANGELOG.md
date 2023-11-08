@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.2](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.1...v1.4.2) (2023-11-08)
+
+
+### Bug Fixes
+
+* 💩 quick fix for emojis ([67dc2a4](https://github.com/thierrymichel/commitlint-config-ccgls/commit/67dc2a4f616f396addef8a1bc3539fb9219ae316))
+
 ## [1.4.1](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.0...v1.4.1) (2023-09-12)
 
 
