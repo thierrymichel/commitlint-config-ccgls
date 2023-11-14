@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-ccgls",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "Commitlint companion for cz-ccgls.",
   "keywords": [
     "commitlint",
