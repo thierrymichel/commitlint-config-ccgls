@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.3](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.2...v1.4.3) (2023-11-14)
+
+
+### Bug Fixes
+
+* 🩹 fix scope:branch parsing ([1166ae6](https://github.com/thierrymichel/commitlint-config-ccgls/commit/1166ae6ca583992feaaf91055db24964cfa40965))
+
 ## [1.4.2](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.1...v1.4.2) (2023-11-08)
 
 
