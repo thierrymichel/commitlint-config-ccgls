@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.4](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.3...v1.4.4) (2023-11-14)
+
+
+### Bug Fixes
+
+* 🩹 add missing branch correspondance ([332f528](https://github.com/thierrymichel/commitlint-config-ccgls/commit/332f52855af33a59ebc2d9c8eb96327471011856))
+
 ## [1.4.3](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.2...v1.4.3) (2023-11-14)
 
 
