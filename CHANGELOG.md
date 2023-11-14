@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.5](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.4...v1.4.5) (2023-11-14)
+
+
+### Bug Fixes
+
+* 🐛 remove : separator ([096bb92](https://github.com/thierrymichel/commitlint-config-ccgls/commit/096bb9272fc4e65c297c17bf7d3c667a22330d27))
+
 ## [1.4.4](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.3...v1.4.4) (2023-11-14)
 
 
