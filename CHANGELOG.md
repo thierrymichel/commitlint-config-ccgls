@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.7](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.6...v1.4.7) (2023-11-15)
+
+
+### Bug Fixes
+
+* 🐛 fix subbranches parsing ([1ad3790](https://github.com/thierrymichel/commitlint-config-ccgls/commit/1ad3790cc5e1f06eaf5fcf65677c444c2bc4f54b))
+
 ## [1.4.6](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.5...v1.4.6) (2023-11-14)
 
 
