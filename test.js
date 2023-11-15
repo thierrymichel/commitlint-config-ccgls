@@ -31,6 +31,9 @@ console.log(
   'chore(app:filters): ⬆ upgrade commitlint deps'.match(headerPattern)
 )
 console.log('imp(app:filters): 🚧 switch to nanostores'.match(headerPattern))
+console.log(
+  'fix(app:feature-filters/fix): 🐛 fix too many parsing'.match(headerPattern)
+)
 // console.log(': ⏪️ r' === ': ⏪ r')
 // console.log('⏪️'.split(''), '⏪️'.length)
 // console.log('⏪'.split(''), '⏪'.length)
