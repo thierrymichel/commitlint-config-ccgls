@@ -20,6 +20,16 @@ const { headerPattern } = parserOpts
 // const regex = emojiRegex()
 console.log('RRRRRRRR', headerPattern)
 // console.log('RRRRRRRR', regex.source)
+console.log('🗃️', '🗃', '🗃️' === '🗃')
+console.log('🗃️'.length, '🗃'.length)
+console.log('🗃️'.length)
+
+const e = '🗃️'.split('')
+
+e.pop()
+
+console.log('🗃️'.split('')[0] === '🗃')
+console.log(e.join(''), e.join('') === '🗃')
 
 // console.log('fix: 🩹 add subject if no emoji'.match(headerPattern))
 console.log('fix: ⏪️ revert to custom eases'.match(headerPattern))
@@ -34,29 +44,4 @@ console.log('imp(app:filters): 🚧 switch to nanostores'.match(headerPattern))
 console.log(
   'fix(app:feature-filters/fix): 🐛 fix too many parsing'.match(headerPattern)
 )
-// console.log(': ⏪️ r' === ': ⏪ r')
-// console.log('⏪️'.split(''), '⏪️'.length)
-// console.log('⏪'.split(''), '⏪'.length)
-
-// console.log(/\s/.test(' '))
-// console.log(/\s/.test('⏪️'))
-// console.log('⏪️'.split(''), '⏪️'.split('')[1] === '️')
-
-// The character U+fe0f is invisible
-
-// console.log('fix: ⏪ add subject if no emoji'.match(regex))
-// console.log('fix: 🩹 add subject if no emoji'.match(regex))
-
-// console.log('fix: ⏪ add subject if no emoji'.match(re))
-// console.log('fix: 🩹 add subject if no emoji'.match(re))
-
-// console.log('TEST', regex.test('🩹'))
-// console.log('TEST', re.test('fix: 🩹 add subject if no emoji'))
-
-// const re =
-//   /^(\w*)(?:\(([\w$.\-*/ ]*)\))?: (🎨|⚡️|🔥|🐛|🚑️|✨|📝|🚀|💄|🎉|✅|🔒️|🔐|🔖|🚨|🚧|💚|⬇️|⬆️|📌|👷|📈|♻️|➕|➖|🔧|🔨|🌐|✏️|💩|⏪️|🔀|📦️|👽️|🚚|📄|💥|🍱|♿️|💡|🍻|💬|🗃️|🔊|🔇|👥|🚸|🏗️|📱|🤡|🥚|🙈|📸|⚗️|🔍️|🏷️|🌱|🚩|🥅|💫|🗑️|🛂|🩹|🧐|⚰️|🧪|👔|🩺|🧱|🧑‍💻|💸|🧵|🦺)\s(.*)$/
-
-// console.log('👀', '⏪️'.match(/⏪️/))
-// console.log('👀', '⏪️ '.match(/⏪️\s(.*)$/))
-// console.log('👀', 'fix: ⏪️ '.match(re))
-// console.log('👀', 'fix(app): ⏪️ message'.match(re))
+console.log('refactor(app:filters): 🗃 remove unused data'.match(headerPattern))
