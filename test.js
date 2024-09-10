@@ -45,3 +45,6 @@ console.log(
   'fix(app:feature-filters/fix): 🐛 fix too many parsing'.match(headerPattern)
 )
 console.log('refactor(app:filters): 🗃 remove unused data'.match(headerPattern))
+console.log(
+  'refactor(app:filters): 🏷 Move DashboardData interface'.match(headerPattern)
+)
