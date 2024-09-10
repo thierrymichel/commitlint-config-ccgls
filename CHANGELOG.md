@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.4.9](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.8...v1.4.9) (2024-09-10)
+
+
+### Bug Fixes
+
+* 🧑‍💻 fix header-max-length (and release) ([d79c17f](https://github.com/thierrymichel/commitlint-config-ccgls/commit/d79c17ff73dd8ed7e9c08f7c31174ad7d561bfad))
+
 ## [1.4.8](https://github.com/thierrymichel/commitlint-config-ccgls/compare/v1.4.7...v1.4.8) (2023-11-15)
 
 
