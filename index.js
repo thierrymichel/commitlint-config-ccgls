@@ -81,22 +81,20 @@ module.exports = {
   plugins: [
     {
       rules: {
-        'header-max-length': (
-          { type, scope, subject },
-          _when = undefined,
-          value
-        ) => {
+        'header-max-length': ({ type, subject }, _when = undefined, value) => {
           // Subject may not be empty is managed by @commitlint/config-conventional
           if (subject === null) {
             return [true]
           }
 
           // Do not use the `emoji` part of the header
+          // Type goes from fix[3] to refactor[8])
           let header = type
 
-          if (scope) {
-            header += `(${scope})`
-          }
+          // Do not take into account the scope that can be very long
+          // if (scope) {
+          //   header += `(${scope})`
+          // }
 
           header += `:${subject}`
 
