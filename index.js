@@ -76,6 +76,9 @@ module.exports = {
     'scope-enum': ctx => getScopes(ctx).then(scopes => [2, 'always', scopes]),
     // Override existing rule with local plugin
     // https://commitlint.js.org/#/reference-plugins?id=local-plugins
+    // Subject is limited to 100 chars.
+    // We need some extra space for the type: fix[3] to refactor[8] + ':'
+    // + issue number: [#xxx]
     'header-max-length': [2, 'always', 120],
   },
   plugins: [
@@ -88,7 +91,6 @@ module.exports = {
           }
 
           // Do not use the `emoji` part of the header
-          // Type goes from fix[3] to refactor[8])
           let header = type
 
           // Do not take into account the scope that can be very long
